@@ -11,10 +11,14 @@
 
 :root {
     /* CSS variables */
+    /* Colors */
     --color-links: rgb(177, 78, 78);
     --color-links-background: rgb(177, 78, 78, 0.2);
+    /* Size */
     --defaultMargin: 6vh auto;
+    --defaultWidth: 60%;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
 }

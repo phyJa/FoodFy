@@ -1,6 +1,6 @@
 /* Header */
 header {
-    width: 60%;
+    width: var(--defaultWidth);
     margin: var(--defaultMargin);
     display: flex;
     justify-content: space-between;
@@ -35,10 +35,10 @@ header .linksContainer a:hover {
 
 /* Presentation */
 .presentation {
-    width: 60%;
+    width: var(--defaultWidth);
     margin: var(--defaultMargin);
     border-radius: 20px;
-    padding: 3vh 3vh 0;
+    padding: 7vh 5vh;
     background-color: #FBDFDB;
     display: flex;
     align-items: center;
@@ -63,4 +63,10 @@ header .linksContainer a:hover {
 
 .presentation #chefContainer {
     padding-right: 10%; /* Of the presentation div */
+}
+
+/* More accessed section */
+section.moreAccessed {
+    margin: var(--defaultMargin);
+    width: var(--defaultWidth);
 }
