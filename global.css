@@ -22,3 +22,59 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/* Header */
+header {
+    width: var(--defaultWidth);
+    margin: var(--defaultMargin);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logoContainer {
+    width: 10%;
+}
+
+header .logoContainer img {
+    width: 100%;
+}
+
+header .linksContainer {
+    flex: 1;
+    padding: 0 20%;
+}
+
+header .linksContainer a {
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-right: 10%;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: border 500ms;
+}
+
+header .linksContainer a:hover {
+    border: 2px solid var(--color-links);
+    background-color: var(--color-links-background);
+    border-radius: 8px;
+    color: var(--color-links);
+}
+
+header .linksContainer a#active {
+    border: 2px solid white;
+    background-color: var(--color-links-background);
+    border-radius: 8px;
+    font-weight: bold;
+    color: var(--color-links);
+    cursor: not-allowed;
+}
+
+/* Footer */
+footer {
+    background-color: #EEEEEE;
+    text-align: center;
+    padding: 2vw;
+    color: #999999;
+    font-size: 14px;
+}

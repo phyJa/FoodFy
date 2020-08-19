@@ -1,41 +1,3 @@
-/* Header */
-header {
-    width: var(--defaultWidth);
-    margin: var(--defaultMargin);
-    display: flex;
-    justify-content: space-between;
-}
-
-header .logoContainer {
-    width: 10%;
-}
-
-header .logoContainer img {
-    width: 100%;
-}
-
-header .linksContainer {
-    flex: 1;
-    padding: 0 20%;
-}
-
-header .linksContainer a {
-    border: 2px solid white;
-    border-radius: 8px;
-    margin-right: 10%;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    transition: border 500ms;
-}
-
-header .linksContainer a:hover {
-    border: 2px solid var(--color-links);
-    background-color: var(--color-links-background);
-    border-radius: 8px;
-    color: var(--color-links);
-}
-
 /* Presentation */
 .presentation {
     width: var(--defaultWidth);
@@ -119,13 +81,4 @@ section.moreAccessed .displayRecipes .recipe .recipeDescription h4 {
 section.moreAccessed .displayRecipes .recipe .recipeDescription p{
     font-size: 14px;
     color: #777777;
-}
-
-/* Footer */
-footer {
-    background-color: #EEEEEE;
-    text-align: center;
-    padding: 2vw;
-    color: #999999;
-    font-size: 14px;
 }
