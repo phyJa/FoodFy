@@ -1,6 +1,32 @@
-
-
+/* Header */
 header {
     width: 70%;
     margin: 6vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logoContainer {
+    width: 10%;
+}
+
+header .logoContainer img {
+    width: 100%;
+}
+
+header .linksContainer {
+    flex: 1;
+    padding: 0 20%;
+}
+
+header .linksContainer a {
+    margin-right: 10%;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+header .linksContainer a:hover {
+    border-bottom: 2px solid var(--color-links);
+    color: var(--color-links);
 }

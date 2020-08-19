@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* CSS variables */
+    --color-links: rgb(177, 78, 78);
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
