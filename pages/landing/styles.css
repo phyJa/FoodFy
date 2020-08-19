@@ -1,7 +1,7 @@
 /* Header */
 header {
-    width: 70%;
-    margin: 6vh auto;
+    width: 60%;
+    margin: var(--defaultMargin);
     display: flex;
     justify-content: space-between;
 }
@@ -28,5 +28,39 @@ header .linksContainer a {
 
 header .linksContainer a:hover {
     border-bottom: 2px solid var(--color-links);
+    background-color: var(--color-links-background);
+    border-radius: 8px;
     color: var(--color-links);
+}
+
+/* Presentation */
+.presentation {
+    width: 60%;
+    margin: var(--defaultMargin);
+    border-radius: 20px;
+    padding: 3vh 3vh 0;
+    background-color: #FBDFDB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation .textContainer {
+    padding: 2%;
+    width: 40%;
+}
+
+.presentation .textContainer h2 {
+    margin-bottom: 5%; /* */
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.presentation .textContainer p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.presentation #chefContainer {
+    padding-right: 10%; /* Of the presentation div */
 }

@@ -12,6 +12,8 @@
 :root {
     /* CSS variables */
     --color-links: rgb(177, 78, 78);
+    --color-links-background: rgb(177, 78, 78, 0.2);
+    --defaultMargin: 6vh auto;
 }
 body {
     font-family: 'Roboto', sans-serif;
