@@ -1,6 +1,6 @@
-* {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
+
+header {
+    width: 70%;
+    margin: 6vh auto;
 }
