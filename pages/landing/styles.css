@@ -78,7 +78,7 @@ section.moreAccessed h3 {
 section.moreAccessed .displayRecipes {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 1fr 1fr 1fr */
-    gap: 2vw;
+    gap: 0.5vw;
     width: 100%;
 }
 
@@ -87,6 +87,7 @@ section.moreAccessed .displayRecipes .recipe {
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
+    transition: border 800ms;
 }
 
 section.moreAccessed .displayRecipes .recipe:hover {
@@ -110,4 +111,9 @@ section.moreAccessed .displayRecipes .recipe .recipeDescription {
 
 section.moreAccessed .displayRecipes .recipe .recipeDescription h4 {
     margin-bottom: 5px;
+}
+
+section.moreAccessed .displayRecipes .recipe .recipeDescription p{
+    font-size: 14px;
+    color: #777777;
 }
