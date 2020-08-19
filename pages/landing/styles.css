@@ -20,14 +20,17 @@ header .linksContainer {
 }
 
 header .linksContainer a {
+    border: 2px solid white;
+    border-radius: 8px;
     margin-right: 10%;
     text-decoration: none;
     color: black;
     padding: 10px;
+    transition: border 500ms;
 }
 
 header .linksContainer a:hover {
-    border-bottom: 2px solid var(--color-links);
+    border: 2px solid var(--color-links);
     background-color: var(--color-links-background);
     border-radius: 8px;
     color: var(--color-links);
@@ -87,7 +90,7 @@ section.moreAccessed .displayRecipes .recipe {
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
-    transition: border 800ms;
+    transition: border 500ms;
 }
 
 section.moreAccessed .displayRecipes .recipe:hover {
@@ -116,4 +119,13 @@ section.moreAccessed .displayRecipes .recipe .recipeDescription h4 {
 section.moreAccessed .displayRecipes .recipe .recipeDescription p{
     font-size: 14px;
     color: #777777;
+}
+
+/* Footer */
+footer {
+    background-color: #EEEEEE;
+    text-align: center;
+    padding: 2vw;
+    color: #999999;
+    font-size: 14px;
 }
