@@ -70,6 +70,59 @@ header .linksContainer a#active {
     cursor: text;
 }
 
+/* Recipe section */
+section {
+    margin: var(--defaultMargin);
+    width: var(--defaultWidth);
+}
+
+section h3 {
+    margin-bottom: 2vh;
+}
+
+section .displayRecipes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 1fr 1fr 1fr */
+    gap: 0.5vw;
+    width: 100%;
+}
+
+section .displayRecipes .recipe {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: border 500ms;
+}
+
+section .displayRecipes .recipe:hover {
+    border: 2px solid var(--color-links);
+    background-color: var(--color-links-background)
+}
+
+section .displayRecipes .recipe .imgContainer {
+    width: 100%;
+}
+
+section .displayRecipes .recipe .imgContainer img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+section .displayRecipes .recipe .recipeDescription {
+    margin-top: 10px;
+    padding: 0 2px;
+}
+
+section .displayRecipes .recipe .recipeDescription h4 {
+    margin-bottom: 5px;
+}
+
+section .displayRecipes .recipe .recipeDescription p{
+    font-size: 14px;
+    color: #777777;
+}
+
 /* Footer */
 footer {
     background-color: #EEEEEE;
