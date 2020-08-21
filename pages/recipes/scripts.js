@@ -24,3 +24,11 @@ closeModal.addEventListener(
         modalOverlay.classList.add("notDisplay");
     }
 )
+
+// If the user clicks out of the modal, close it too
+modalOverlay.addEventListener(
+    "click",
+    () => {
+        modalOverlay.classList.add("notDisplay");
+    }
+)

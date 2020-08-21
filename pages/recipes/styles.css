@@ -63,12 +63,13 @@
 
 .modalOverlay .modal .closeModal button {
     padding: 10px 20px;
-    background-color: #cccccc;
+    background-color: #d4a0a0;
     color: #555555;
     border-radius: 8px;
     outline: none;
     font-size: 16px;
     transition: color 500ms;
+    font-weight: bold;
 }
 
 .modalOverlay .modal .closeModal button:hover {
