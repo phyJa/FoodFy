@@ -131,3 +131,87 @@ footer {
     color: #999999;
     font-size: 14px;
 }
+
+/* Modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalOverlay .modal {
+    background-color: white;
+    border-radius: 16px;
+    padding: 2.1%;
+}
+
+.modalOverlay .modal .modalContent {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalOverlay .modal .modalContent .imgContainer {
+    width: 95%;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.modalOverlay .modal .modalContent .imgContainer img {
+    width: 100%;
+    border-radius: 15px;    
+}
+
+.modalOverlay .modal .modalContent .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modalOverlay .modal .modalContent .textContainer h4.recipeTitle {
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
+    font-weight: 400;
+    margin-bottom: 1.5%;
+}
+
+.modalOverlay .modal .modalContent .textContainer p.recipeOwner {
+    font-size: 18px;
+    line-height: 21px;
+    color: #777777;
+}
+
+.modalOverlay .modal .closeModal {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.modalOverlay .modal .closeModal button {
+    padding: 10px 20px;
+    background-color: #d4a0a0;
+    color: #555555;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: color 500ms;
+    font-weight: bold;
+}
+
+.modalOverlay .modal .closeModal button:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.notDisplay {
+    display: none;
+}
