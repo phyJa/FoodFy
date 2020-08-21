@@ -75,3 +75,7 @@
     color: crimson;
     cursor: pointer;
 }
+
+.notDisplay {
+    display: none;
+}
