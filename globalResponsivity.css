@@ -1,0 +1,63 @@
+/* ==== Responsivity ==== */
+@media(max-width: 1260px) {
+    header .logoContainer {
+        width: 18%;
+    }
+
+    header .linksContainer a {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 760px) {
+    header {
+        margin: var(--defaultMargin);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "logo logo"
+            "link link" ;
+    }
+    
+    header .logoContainer {
+        width: 40%;
+        grid-area: logo;
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    header .linksContainer {
+        width: 20%;
+        grid-area: link;
+        align-self: center;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header .linksContainer a {
+        border: 0;
+        border-radius: 0;
+        text-decoration: none;
+        color: black;
+        padding: 3px;
+        transition: border 500ms;
+        font-size: 4vw;
+        margin-bottom: 3vw;
+    }
+
+}
+
+@media(min-width: 1440px) {
+    header .logoContainer {
+        width: 20%;
+        grid-area: logo;
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    header .linksContainer a {
+        font-size: 2vw; 
+    }
+}
