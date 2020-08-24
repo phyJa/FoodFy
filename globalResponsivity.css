@@ -93,4 +93,16 @@
     header .linksContainer a {
         font-size: 2vw; 
     }
+
+    section.moreAccessed h3 {
+        font-size: 2.5vw;
+    }
+
+    section.moreAccessed .displayRecipes .recipeDescription .recipeTitle {
+        font-size: 1.5vw;
+    }
+
+    section.moreAccessed .displayRecipes .recipeDescription .recipeOwner {
+        font-size: 1.2vw;
+    }
 }
