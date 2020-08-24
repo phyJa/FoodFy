@@ -29,3 +29,29 @@
 .presentation #chefContainer {
     padding-right: 10%; /* Of the presentation div */
 }
+
+.presentation #chefContainer img {
+    width: 100%;
+}
+
+/* ==== Responsivity ==== */
+@media (max-width: 1100px) {
+    .presentation .textContainer {
+        width: 60%;
+    }
+    
+    .presentation .textContainer h2 {
+        font-size: 4vw;
+    }
+
+    .presentation .textContainer p {
+        font-size: 3vw;
+        line-height: 3.5vw;
+        width: 100%;
+    }
+
+    .presentation #chefContainer {
+        padding-right: 2%;
+        width: 40%;
+    }
+}
