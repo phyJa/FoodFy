@@ -121,6 +121,7 @@ section .displayRecipes .recipe .recipeDescription {
 
 section .displayRecipes .recipe .recipeDescription h4 {
     margin-bottom: 5px;
+    font-size: 18px;
 }
 
 section .displayRecipes .recipe .recipeDescription p{
