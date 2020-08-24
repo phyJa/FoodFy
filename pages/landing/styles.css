@@ -55,3 +55,24 @@
         width: 40%;
     }
 }
+
+@media(min-width: 1440px) {
+    .presentation .textContainer {
+        width: 60%;
+    }
+    
+    .presentation .textContainer h2 {
+        font-size: 3.5vw;
+    }
+
+    .presentation .textContainer p {
+        font-size: 2.5vw;
+        line-height: 3vw;
+        width: 100%;
+    }
+
+    .presentation #chefContainer {
+        padding-right: 2%;
+        width: 40%;
+    }
+}
