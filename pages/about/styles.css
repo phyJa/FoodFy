@@ -26,3 +26,33 @@ section article.textContainer p {
 section article.textContainer p + p {
     margin-top: 2vh;
 }
+
+@media(max-width: 500px){
+    section h2 {
+        font-size: 5vw;
+    }
+    
+    section h3 {
+        font-size: 4.5vw;
+    }
+
+    section article.textContainer p {
+        font-size: 4vw;
+        line-height: 7vw;
+    }
+}
+
+@media(min-width: 1440px){
+    section h2 {
+        font-size: 3vw;
+    }
+    
+    section h3 {
+        font-size: 2.5vw;
+    }
+
+    section article.textContainer p {
+        font-size: 2vw;
+        line-height: 3.5vw;
+    }
+}

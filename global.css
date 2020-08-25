@@ -37,6 +37,11 @@ header .logoContainer {
     align-items: center;
 }
 
+header .logoContainer a {
+    display: block;
+    width: 100%;
+}
+
 header .logoContainer img {
     width: 100%;
 }
