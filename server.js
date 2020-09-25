@@ -4,6 +4,9 @@ const express = require("express");
 // Call nunjucks
 const nunjucks = require("nunjucks");
 
+// Get the recipes
+const recipes = require("./data/data.js");
+
 // Execute the server
 const server = express();
 
@@ -26,7 +29,12 @@ nunjucks.configure(
 server.get(
     "/",
     (req, res) => {
-        return res.render("landing");
+        return res.render(
+            "landing",
+            {
+                recipes
+            }
+        );
     }
 );
 
