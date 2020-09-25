@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/phyJa/FoodFy/issues"
   },
-  "homepage": "https://github.com/phyJa/FoodFy#readme"
+  "homepage": "https://github.com/phyJa/FoodFy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  }
 }
