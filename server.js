@@ -22,6 +22,7 @@ nunjucks.configure(
 );
 
 // Routes
+// Landing page
 server.get(
     "/",
     (req, res) => {
@@ -29,6 +30,21 @@ server.get(
     }
 );
 
+// About
+server.get(
+    "/about",
+    (req, res) => {
+        return res.render("about")
+    }
+);
+
+//Recipes
+server.get(
+    "/recipes",
+    (req, res) => {
+        return res.render("recipes")
+    }
+);
 
 // Listen
 const port = 3000;
