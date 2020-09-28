@@ -36,149 +36,50 @@
             <h3>Receitas</h3>
 
             <div class="displayRecipes">
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/burger.png" alt="Triplo bacon burguer" />
+                
+                {% for recipe in recipes %}
+
+                    <div class="recipe">
+
+                        <div class="imgContainer">
+
+                            <img src="{{recipe.imgSrc}}" alt="Image of {{recipe.recipeTitle}}" />
+
+                        </div>
+
+                        <div class="recipeDescription">
+
+                            <h4 class="recipeTitle"> {{ recipe.recipeTitle }} </h4>
+
+                            <p class="recipeOwner"> por {{ recipe.recipeOwner }} </p>
+
+                        </div>
+
                     </div>
 
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Triplo bacon burguer</h4>
+                {% endfor %}
 
-                        <p class="recipeOwner"> por Jorge Relato </p>
-                    </div>
-                </div>
+                {% for recipe in recipes %}
 
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/pizza.png" alt="Pizza quatro estações" />
-                    </div>
+                    <div class="recipe">
 
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Pizza quatro estações</h4>
+                        <div class="imgContainer">
 
-                        <p class="recipeOwner"> por Fabiana Melo </p>
-                    </div>
-                </div>
+                            <img src="{{recipe.imgSrc}}" alt="Image of {{recipe.recipeTitle}}" />
 
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/espaguete.png" alt="Espaguete ao alho" />
+                        </div>
+
+                        <div class="recipeDescription">
+
+                            <h4 class="recipeTitle"> {{ recipe.recipeTitle }} </h4>
+
+                            <p class="recipeOwner"> por {{ recipe.recipeOwner }} </p>
+
+                        </div>
+
                     </div>
 
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Espaguete ao alho</h4>
-
-                        <p class="recipeOwner"> por Fabiana Kinoto </p>
-                    </div>
-                </div>
-
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/lasanha.png" alt="Lasanha mac n' cheese" />
-                    </div>
-
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Lasanha mac n' cheese</h4>
-
-                        <p class="recipeOwner"> por Juliano Vieira </p>
-                    </div>
-                </div>
-
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/doce.png" alt="Docinhos pão-do-céu" />
-                    </div>
-
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Docinhos pão-do-céu</h4>
-
-                        <p class="recipeOwner"> por Ricardo Golvea </p>
-                    </div>
-                </div>
-
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/asinhas.png" alt="Asinhas de frango ao barbecue" />
-                    </div>
-
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Asinhas de frango ao barbecue</h4>
-
-                        <p class="recipeOwner"> por Vania Steroski </p>
-                    </div>
-                </div>
-
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/burger.png" alt="Triplo bacon burguer" />
-                    </div>
-
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Triplo bacon burguer</h4>
-
-                        <p class="recipeOwner"> por Jorge Relato </p>
-                    </div>
-                </div>
-
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/pizza.png" alt="Pizza quatro estações" />
-                    </div>
-
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Pizza quatro estações</h4>
-
-                        <p class="recipeOwner"> por Fabiana Melo </p>
-                    </div>
-                </div>
-
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/espaguete.png" alt="Espaguete ao alho" />
-                    </div>
-
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Espaguete ao alho</h4>
-
-                        <p class="recipeOwner"> por Fabiana Kinoto </p>
-                    </div>
-                </div>
-
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/lasanha.png" alt="Lasanha mac n' cheese" />
-                    </div>
-
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Lasanha mac n' cheese</h4>
-
-                        <p class="recipeOwner"> por Juliano Vieira </p>
-                    </div>
-                </div>
-
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/doce.png" alt="Docinhos pão-do-céu" />
-                    </div>
-
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Docinhos pão-do-céu</h4>
-
-                        <p class="recipeOwner"> por Ricardo Golvea </p>
-                    </div>
-                </div>
-
-                <div class="recipe">
-                    <div class="imgContainer">
-                        <img src="../../assets/asinhas.png" alt="Asinhas de frango ao barbecue" />
-                    </div>
-
-                    <div class="recipeDescription">
-                        <h4 class="recipeTitle">Asinhas de frango ao barbecue</h4>
-
-                        <p class="recipeOwner"> por Vania Steroski </p>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </section>
 

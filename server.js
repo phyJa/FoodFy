@@ -50,7 +50,12 @@ server.get(
 server.get(
     "/recipes",
     (req, res) => {
-        return res.render("recipes")
+        return res.render(
+            "recipes",
+            {
+                recipes
+            }
+        )
     }
 );
 
