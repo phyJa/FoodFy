@@ -1,34 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt_BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FoodFy</title>
+{% extends "layout.njk" %}
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-
-        <!-- Style -->
-        <link rel="stylesheet" href="/global/global.css">
-        <link rel="stylesheet" href="/landingStyles.css" />
-        <link rel="stylesheet" href="/global/globalResponsivity.css" />
-    </head>
-    <body>
-        <header>
-            <div class="logoContainer">
-                <img src="/assets/logo.png" alt="FoodFy logo" title="FoodFy" />
-            </div>
-
-            <div class="linksContainer">
-                <a href="/about">Sobre</a>
-
-                <a href="/recipes">Receitas</a>
-            </div>
-        </header>
+{% block content %}
 
         <div class="presentation">
+
             <div class="textContainer">
+
                 <h2>As melhores receitas</h2>
 
                 <p>
@@ -36,14 +13,19 @@
                     com receitas criadas por profissionais
                     do mundo inteiro.
                 </p>
+
             </div>
 
             <div id="chefContainer">
+
                 <img src="../../assets/chef.png" alt="Chef">
+
             </div>
+
         </div>
 
         <section>
+
             <h3>Mais acessadas</h3>
 
             <div class="displayRecipes">
@@ -75,30 +57,4 @@
             
         </section>
 
-        <footer>
-            Todos os direitos reservados, receitas FoodFy.
-        </footer>
-
-        <div class="modalOverlay notDisplay">
-            <div class="modal">
-                <div class="modalContent">
-                    <div class="imgContainer">
-                        <img src="" alt="" />
-                    </div>
-
-                    <div class="textContainer">
-                        <h4 class="recipeTitle"></h4>
-
-                        <p class="recipeOwner"></p>
-                    </div>
-                </div>
-
-                <div class="closeModal">
-                    <button> Fechar </button>
-                </div>
-            </div>
-        </div>
-
-        <script src="/global/global.js"></script>
-    </body>
-</html>
+{% endblock content %}
