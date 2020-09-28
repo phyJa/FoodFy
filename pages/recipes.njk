@@ -1,114 +1,68 @@
-<!DOCTYPE html>
-<html lang="pt_BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Receitas</title>
+{% extends "layout.njk" %}
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="/global/assets/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/global/assets/favicon.ico" type="image/x-icon" />
+{% block links %}
 
-        <!-- Style -->
-        <link rel="stylesheet" href="/global/global.css" />
-        <link rel="stylesheet" href="/global/globalResponsivity.css" />
-    </head>
-    <body>
-        <header>
-            <div class="logoContainer">
-                <a href="/">
-                    <img 
-                        src="../../assets/logo.png"  
-                        alt="FoodFy logo" 
-                        title="Home" 
-                    />
-                </a>  
-            </div>
+    <a href="/about">Sobre</a>
 
-            <div class="linksContainer">
-                <a href="/about">Sobre</a>
+    <a href="" id="active">Receitas</a>
 
-                <a href="" id="active">Receitas</a>
-            </div>
-        </header>
+{% endblock links %}
 
-        <section>
-            <h3>Receitas</h3>
+{% block content %}
 
-            <div class="displayRecipes">
-                
-                {% for recipe in recipes %}
+    <section>
 
-                    <div class="recipe">
+        <h3>Receitas</h3>
 
-                        <div class="imgContainer">
-
-                            <img src="{{recipe.imgSrc}}" alt="Image of {{recipe.recipeTitle}}" />
-
-                        </div>
-
-                        <div class="recipeDescription">
-
-                            <h4 class="recipeTitle"> {{ recipe.recipeTitle }} </h4>
-
-                            <p class="recipeOwner"> por {{ recipe.recipeOwner }} </p>
-
-                        </div>
-
-                    </div>
-
-                {% endfor %}
-
-                {% for recipe in recipes %}
-
-                    <div class="recipe">
-
-                        <div class="imgContainer">
-
-                            <img src="{{recipe.imgSrc}}" alt="Image of {{recipe.recipeTitle}}" />
-
-                        </div>
-
-                        <div class="recipeDescription">
-
-                            <h4 class="recipeTitle"> {{ recipe.recipeTitle }} </h4>
-
-                            <p class="recipeOwner"> por {{ recipe.recipeOwner }} </p>
-
-                        </div>
-
-                    </div>
-
-                {% endfor %}
-
-            </div>
+        <div class="displayRecipes">
             
-        </section>
+            {% for recipe in recipes %}
 
-        <footer>
-            Todos os direitos reservados, receitas FoodFy.
-        </footer>
+                <div class="recipe">
 
-        <div class="modalOverlay notDisplay">
-            <div class="modal">
-                <div class="modalContent">
                     <div class="imgContainer">
-                        <img src="" alt="" />
+
+                        <img src="{{recipe.imgSrc}}" alt="Image of {{recipe.recipeTitle}}" />
+
                     </div>
 
-                    <div class="textContainer">
-                        <h4 class="recipeTitle"></h4>
+                    <div class="recipeDescription">
 
-                        <p class="recipeOwner"></p>
+                        <h4 class="recipeTitle"> {{ recipe.recipeTitle }} </h4>
+
+                        <p class="recipeOwner"> por {{ recipe.recipeOwner }} </p>
+
                     </div>
+
                 </div>
 
-                <div class="closeModal">
-                    <button> Fechar </button>
+            {% endfor %}
+
+            {% for recipe in recipes %}
+
+                <div class="recipe">
+
+                    <div class="imgContainer">
+
+                        <img src="{{recipe.imgSrc}}" alt="Image of {{recipe.recipeTitle}}" />
+
+                    </div>
+
+                    <div class="recipeDescription">
+
+                        <h4 class="recipeTitle"> {{ recipe.recipeTitle }} </h4>
+
+                        <p class="recipeOwner"> por {{ recipe.recipeOwner }} </p>
+
+                    </div>
+
                 </div>
-            </div>
+
+            {% endfor %}
+
         </div>
-
-        <script src="/global/global.js"></script>
-    </body>
-</html>
+        
+    </section>
+    
+{% endblock content %}
+    
