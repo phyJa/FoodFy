@@ -1,42 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt_BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre</title>
+{% extends "layout.njk" %}
+             
+{% block links %}
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <a href="" id="active">Sobre</a>
 
-        <!-- Style -->
-        <link rel="stylesheet" href="/global/global.css" />
-        <link rel="stylesheet" href="/aboutStyles.css" />
-        <link rel="stylesheet" href="/global/globalResponsivity.css" />
-    </head>
-    <body>
-        <header>
-            <div class="logoContainer">
-                <a href="/">
-                    <img 
-                        src="/assets/logo.png"  
-                        alt="FoodFy logo" 
-                        title="Home" 
-                    />
-                </a>  
-            </div>
+    <a href="/recipes">Receitas</a>
 
-            <div class="linksContainer">
-                <a href="" id="active">Sobre</a>
+{% endblock links %}
 
-                <a href="/recipes">Receitas</a>
-            </div>
-        </header>
+     
+{% block content %}
+
 
         <section>
+
             <h2>Sobre o Foodfy</h2>
 
             <article class="textContainer">
+
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, quae quam. 
                     Dolorem id, commodi cum doloribus repellat ad!
@@ -61,13 +42,17 @@
                     Molestiae modi consequuntur soluta recusandae molestias cupiditate
                     ex ducimus aut minus nihil.
                 </p>
+
             </article>
+
         </section>
 
         <section>
+         
             <h3>Como tudo começou...</h3>
 
             <article class="textContainer">
+          
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, quae quam. 
                     Dolorem id, commodi cum doloribus repellat ad!
@@ -81,13 +66,17 @@
                     Molestiae modi consequuntur soluta recusandae molestias cupiditate
                     ex ducimus aut minus nihil.
                 </p>
+          
             </article>
+       
         </section>
 
         <section>
+       
             <h3>Nossas receitas</h3>
 
             <article class="textContainer">
+        
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, quae quam. 
                     Dolorem id, commodi cum doloribus repellat ad!
@@ -112,11 +101,10 @@
                     Molestiae modi consequuntur soluta recusandae molestias cupiditate
                     ex ducimus aut minus nihil.
                 </p>
+         
             </article>
+        
         </section>
 
-        <footer>
-            Todos os direitos reservados, receitas FoodFy.
-        </footer>
-    </body>
-</html>
+{% endblock content %}
+
