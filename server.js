@@ -59,6 +59,45 @@ server.get(
     }
 );
 
+
+// A specific recipe
+server.get(
+
+    "/recipes/:index",
+
+    function(req, res) {
+
+        // Store the recipe index here
+        const recipeIndex = Number(req.params.index);
+
+        // Verify if the index of the recipe exists
+        var indexExists = false;
+
+        // Search for the index
+        for(let i = 0; i < recipes.length; i++) {
+
+            if(recipeIndex === i) {
+
+                indexExists = true;
+
+            }
+
+        }
+
+        if(indexExists) {
+
+            return res.send(recipes[recipeIndex].title);
+
+        } else {
+
+            return res.send("Recipe not found...")
+            
+        }
+
+    }
+
+);
+
 // Listen
 const port = 3000;
 
