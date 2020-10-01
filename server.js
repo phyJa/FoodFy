@@ -86,7 +86,15 @@ server.get(
 
         if(indexExists) {
 
-            return res.send(recipes[recipeIndex].title);
+            return res.render(
+            
+                "recipe",
+                
+                {
+                    recipe: recipes[recipeIndex]
+                }
+            
+            );
 
         } else {
 
