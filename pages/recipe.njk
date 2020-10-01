@@ -18,7 +18,11 @@
 
     <div class="ingredientsContainer">
 
-        <h3 class="ingredientsTitle"> Ingredientes </h3>
+        <div class="ingredientsTitleContainer"> 
+        
+            <h3> Ingredientes </h3>     
+        
+        </div>
 
         <ul class="ingredients">
 
@@ -29,6 +33,42 @@
             {% endfor %}
 
         </ul>
+
+    </div>
+
+    <div class="preparationContainer">
+
+        <div class="preparationTitleContainer"> 
+
+            <h3> Modo de preparo</h3>
+
+        </div>
+
+        <ul class="preparation">
+
+            {% for preparationItem in recipe.preparation %}
+
+                <li> {{ preparationItem }} </li>
+
+            {% endfor %}
+
+        </ul>
+
+    </div>
+
+    <div class="additionalInformationContainer">
+
+        <div class="additionalInformationTitleContainer">
+
+            <h3> Informações adicionais</h3>
+
+        </div>
+
+        <div class="informationContainer">
+
+            <p> {{ recipe.information }} </p>
+
+        </div>
 
     </div>
 
