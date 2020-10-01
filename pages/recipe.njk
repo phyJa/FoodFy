@@ -1,2 +1,35 @@
 {% extends "layout.njk" %}
 
+{% block content %}
+
+    <div class="recipeImageContainer">
+
+        <img src="{{recipe.image}}" alt="Image of {{recipe.title}}" class="recipe" />
+
+    </div>
+
+    <div class="titleAndAuthorContainer">
+
+        <h2 class="recipeTitle"> {{ recipe.title }} </h2>
+
+        <h3 class="recipeAuthor"> por {{recipe.author}} </h3>
+
+    </div>
+
+    <div class="ingredientsContainer">
+
+        <h3 class="ingredientsTitle"> Ingredientes </h3>
+
+        <ul class="ingredients">
+
+            {% for ingredient in recipe.ingredients %}
+
+                <li> {{ ingredient }} </li>
+
+            {% endfor %}
+
+        </ul>
+
+    </div>
+
+{% endblock content %}
