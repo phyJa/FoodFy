@@ -56,20 +56,25 @@
 
     </div>
 
-    <div class="additionalInformationContainer">
+    {% if recipe.information !== "" %}
+        
+        <div class="additionalInformationContainer">
 
-        <div class="additionalInformationTitleContainer">
+            <div class="additionalInformationTitleContainer">
 
-            <h3> Informações adicionais</h3>
+                <h3> Informações adicionais</h3>
+
+            </div>
+
+            <div class="informationContainer">
+
+                <p> {{ recipe.information }} </p>
+
+            </div>
 
         </div>
 
-        <div class="informationContainer">
-
-            <p> {{ recipe.information }} </p>
-
-        </div>
-
-    </div>
+    {% endif %}
+    
 
 {% endblock content %}
