@@ -1,9 +1,6 @@
 // Find the recipes
 const recipes = document.querySelectorAll(".recipe");
 
-// Find the index
-const indexes = document.querySelectorAll(".displayIndex");
-
 // Add an event listener to each recipe
 for(let recipe of recipes) {
 
