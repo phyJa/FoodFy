@@ -18,45 +18,75 @@ server.set("view engine", "njk");
 
 // Configure nunjucks
 nunjucks.configure(
+
     "pages",
+    
     {
+    
         express: server
+    
     }
+
 );
 
 // Routes
 // Landing page
 server.get(
+
     "/",
+    
     (req, res) => {
+    
         return res.render(
+    
             "landing",
+    
             {
+    
                 recipes
+    
             }
+    
         );
+    
     }
+
 );
 
 // About
 server.get(
+
     "/about",
+    
     (req, res) => {
+    
         return res.render("about")
+    
     }
+
 );
 
 //Recipes
 server.get(
+
     "/recipes",
+    
     (req, res) => {
+    
         return res.render(
+    
             "recipes",
+    
             {
+    
                 recipes
+    
             }
-        )
+    
+        );
+
     }
+
 );
 
 
@@ -110,8 +140,13 @@ server.get(
 const port = 3000;
 
 server.listen(
+
     port,
+
     (req, res) => {
+
         console.log(`Server listening on port ${port}!`);
+
     }
+    
 );
