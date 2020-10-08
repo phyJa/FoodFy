@@ -52,7 +52,6 @@
 }
 
 
-
 .ingredientsContainer .ingredients,
 .preparationContainer .preparation {
 
@@ -61,7 +60,13 @@
 
 }
 
-.ingredientsContainer .ingredients li {
+.ingredientsContainer .ingredients li,
+.preparationContainer .preparation li,
+.additionalInformationContainer .informationContainer p {
+
+    line-height: 26px;
+
+    font-size: 18px;
 
     margin-top: 1vw;
 
