@@ -1,10 +1,11 @@
-.recipeImageContainer {
+.recipeImageContainer,
+.preparationContainer,
+.ingredientsContainer,
+.additionalInformationContainer {
 
-    width: 940px;
+    width: var(--defaultWidth);
     
-    margin: 0 auto;
-
-    height: 280px;
+    margin: var(--defaultMargin);
 
 }
 
@@ -20,7 +21,7 @@
 
 .titleAndAuthorContainer {
 
-    width: 940px;
+    width: var(--defaultWidth);
 
     margin: 50px auto 0;
 
@@ -36,7 +37,7 @@
 
 .titleAndAuthorContainer .recipeTitle {
 
-    font-size: 36px;
+    font-size: 4vw;
 
     color: #111111;
 
@@ -44,8 +45,24 @@
 
 .titleAndAuthorContainer .recipeAuthor {
 
-    font-size: 20px;
+    font-size: 2vw;
 
     color: #777777;
+
+}
+
+
+
+.ingredientsContainer .ingredients,
+.preparationContainer .preparation {
+
+    /* To make the list markers be inside the ul element */
+    list-style-position: inside;
+
+}
+
+.ingredientsContainer .ingredients li {
+
+    margin-top: 1vw;
 
 }

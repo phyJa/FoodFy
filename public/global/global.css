@@ -16,6 +16,7 @@
     --color-links-background: rgb(177, 78, 78, 0.2);
     /* Size */
     --defaultMargin: 6vh auto;
+    --commonMargin: 0 auto;
     --defaultWidth: 60%;
 }
 
