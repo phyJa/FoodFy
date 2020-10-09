@@ -1,38 +1,27 @@
 // Get the html element
-const hideIngredientsButton = document.querySelector(".hideIngredients");
-const showIngredientsButton = document.querySelector(".showIngredients");
+const buttons = {
 
-const ingredients = document.querySelector(".ingredients");
+    hide: document.querySelectorAll(".hide"),
 
-// Add an event listener
-hideIngredientsButton.addEventListener(
-    
-    "click",
+    show: document.querySelectorAll(".show")
 
-    () => { 
+}
 
-        ingredients.classList.add("notDisplay");
+for(let groupOfButtons in buttons) {
 
-        hideIngredientsButton.classList.add("notDisplay");
+    for(let button of buttons[groupOfButtons]) {
 
-        showIngredientsButton.classList.remove("notDisplay");
-    
+        console.log(button);
+
+        button.addEventListener(
+
+            "click",
+
+            () => { console.log("Test"); }
+
+        );
+
     }
 
-);
+}
 
-showIngredientsButton.addEventListener(
-    
-    "click",
-
-    () => { 
-
-        ingredients.classList.remove("notDisplay");
-
-        hideIngredientsButton.classList.remove("notDisplay");
-
-        showIngredientsButton.classList.add("notDisplay");
-    
-    }
-
-);

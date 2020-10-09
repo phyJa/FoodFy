@@ -61,9 +61,7 @@
 
 }
 
-.ingredientsContainer .ingredientsTitleContainer button,
-.preparationContainer .preparationTitleContainer button,
-.additionalInformationContainer .additionalInformationTitleContainer button {
+button {
 
     margin-left: 40px;
 
@@ -77,9 +75,7 @@
 
 }
 
-.ingredientsContainer .ingredientsTitleContainer button.hideIngredients:hover,
-.preparationContainer .preparationTitleContainer button.hidePreparation:hover,
-.additionalInformationContainer .additionalInformationTitleContainer button.hideAdditionalInformation:hover {
+button.hide:hover {
 
     cursor: pointer;
 
