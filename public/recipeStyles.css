@@ -51,6 +51,43 @@
 
 }
 
+.ingredientsContainer .ingredientsTitleContainer,
+.preparationContainer .preparationTitleContainer,
+.additionalInformationContainer .additionalInformationTitleContainer {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.ingredientsContainer .ingredientsTitleContainer button,
+.preparationContainer .preparationTitleContainer button,
+.additionalInformationContainer .additionalInformationTitleContainer button {
+
+    margin-left: 40px;
+
+    padding: 1vw;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    transition: background-color 400ms, color 400ms;
+
+}
+
+.ingredientsContainer .ingredientsTitleContainer button.hideIngredients:hover,
+.preparationContainer .preparationTitleContainer button.hidePreparation:hover,
+.additionalInformationContainer .additionalInformationTitleContainer button.hideAdditionalInformation:hover {
+
+    cursor: pointer;
+
+    background-color: rgb(163, 64, 61);
+
+    color: white;
+
+}
 
 .ingredientsContainer .ingredients,
 .preparationContainer .preparation {

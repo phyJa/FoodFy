@@ -26,8 +26,12 @@
 
         <div class="ingredientsTitleContainer"> 
         
-            <h3> Ingredientes </h3>     
-        
+            <h3> Ingredientes </h3>   
+
+            <button class="hideIngredients"> Esconder </button>
+
+            <button class="showIngredients notDisplay"> Mostrar </button>
+
         </div>
 
         <ul class="ingredients">
@@ -47,6 +51,10 @@
         <div class="preparationTitleContainer"> 
 
             <h3> Modo de preparo</h3>
+
+            <button class="hidePreparation"> Esconder </button>
+
+            <button class="showPreparation notDisplay"> Mostrar </button>
 
         </div>
 
@@ -70,6 +78,10 @@
 
                 <h3> Informações adicionais</h3>
 
+                <button class="hideAdditionalInformation"> Esconder </button>
+
+                <button class="showAdditionalInformation notDisplay"> Mostrar </button>
+
             </div>
 
             <div class="informationContainer">
@@ -82,5 +94,6 @@
 
     {% endif %}
     
+    <script src="/recipeScripts.js"></script>
 
 {% endblock content %}
