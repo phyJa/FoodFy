@@ -85,6 +85,16 @@ button.hide:hover {
 
 }
 
+button.show:hover {
+
+    cursor: pointer;
+
+    background-color: rgb(64, 177, 143);
+
+    color: white;
+
+}
+
 .ingredientsContainer .ingredients,
 .preparationContainer .preparation {
 
