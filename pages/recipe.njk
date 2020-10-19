@@ -28,13 +28,13 @@
         
             <h3> Ingredientes </h3>   
 
-            <button class="hide"> Esconder </button>
+            <button class="hide ingredients"> Esconder </button>
 
-            <button class="show notDisplay"> Mostrar </button>
+            <button class="show ingredients notDisplay"> Mostrar </button>
 
         </div>
 
-        <ul class="ingredients">
+        <ul id="ingredients">
 
             {% for ingredient in recipe.ingredients %}
 
@@ -52,13 +52,13 @@
 
             <h3> Modo de preparo</h3>
 
-            <button class="hide"> Esconder </button>
+            <button class="hide preparation"> Esconder </button>
 
-            <button class="show notDisplay"> Mostrar </button>
+            <button class="show preparation notDisplay"> Mostrar </button>
 
         </div>
 
-        <ul class="preparation">
+        <ul id="preparation">
 
             {% for preparationItem in recipe.preparation %}
 
@@ -78,13 +78,13 @@
 
                 <h3> Informações adicionais</h3>
 
-                <button class="hide"> Esconder </button>
+                <button class="hide informationContainer"> Esconder </button>
 
-                <button class="show notDisplay"> Mostrar </button>
+                <button class="show informationContainer notDisplay"> Mostrar </button>
 
             </div>
 
-            <div class="informationContainer">
+            <div id="informationContainer">
 
                 <p> {{ recipe.information }} </p>
 
