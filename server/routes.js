@@ -2,70 +2,16 @@ const express = require("express");
 
 const routes = express.Router();
 
-// Get the recipes
-const recipes = require("../data/data.js");
+const visitorController = require("./controllers/visitor");
 
 // Routes
 // Landing page
-routes.get(
-    "/",
-    (req, res) => {
-        return res.render(
-            "landing",
-            {
-                recipes
-            }
-        );
-    }
-);
-
+routes.get("/", visitorController.home);
+// Show recipes
+routes.get("/recipes", visitorController.index);
 // About
-routes.get(
-    "/about",
-    (req, res) => {
-        return res.render("about")
-    }
-);
-
-//Recipes
-routes.get(
-    "/recipes",  
-    (req, res) => {    
-        return res.render(    
-            "recipes",    
-            {    
-                recipes   
-            }
-        );
-    }
-);
-
-
+routes.get("/about", visitorController.about);
 // A specific recipe
-routes.get(
-    "/recipes/:index",
-    function(req, res) {
-        // Store the recipe index here
-        const recipeIndex = Number(req.params.index);
-        // Verify if the index of the recipe exists
-        var indexExists = false;
-        // Search for the index
-        for(let i = 0; i < recipes.length; i++) {
-            if(recipeIndex === i) {
-                indexExists = true;
-            }
-        }
-        if(indexExists) {
-            return res.render(            
-                "recipe",                
-                {
-                    recipe: recipes[recipeIndex]
-                }            
-            );
-        } else {
-            return res.send("Recipe not found...")            
-        }
-    }
-);
+routes.get("/recipes/:index", visitorController.show);
 
 module.exports = routes;
