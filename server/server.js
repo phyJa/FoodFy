@@ -22,7 +22,7 @@ nunjucks.configure(
 
 // Listen
 server.listen(
-    3000,
+    4000,
     (req, res) => {
         console.log(`Server is listening!`);
     }
