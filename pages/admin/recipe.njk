@@ -1,0 +1,99 @@
+{% extends "admin/layout.njk" %}
+
+{% block additionalStyles %}
+
+    <link rel="stylesheet" href="/recipeStyles.css" />
+    
+{% endblock additionalStyles %}
+
+{% block content %}
+
+    <div class="recipeImageContainer">
+
+        <img src="{{recipe.image}}" alt="Image of {{recipe.title}}" class="recipe" />
+
+    </div>
+
+    <div class="titleAndAuthorContainer">
+
+        <h2 class="recipeTitle"> {{ recipe.title }} </h2>
+
+        <h3 class="recipeAuthor"> por {{recipe.author}} </h3>
+
+    </div>
+
+    <div class="ingredientsContainer">
+
+        <div class="ingredientsTitleContainer"> 
+        
+            <h3> Ingredientes </h3>   
+
+            <button class="hide ingredients"> Esconder </button>
+
+            <button class="show ingredients notDisplay"> Mostrar </button>
+
+        </div>
+
+        <ul id="ingredients">
+
+            {% for ingredient in recipe.ingredients %}
+
+                <li> {{ ingredient }} </li>
+
+            {% endfor %}
+
+        </ul>
+
+    </div>
+
+    <div class="preparationContainer">
+
+        <div class="preparationTitleContainer"> 
+
+            <h3> Modo de preparo</h3>
+
+            <button class="hide preparation"> Esconder </button>
+
+            <button class="show preparation notDisplay"> Mostrar </button>
+
+        </div>
+
+        <ul id="preparation">
+
+            {% for preparationItem in recipe.preparation %}
+
+                <li> {{ preparationItem }} </li>
+
+            {% endfor %}
+
+        </ul>
+
+    </div>
+
+    {% if recipe.information !== "" %}
+        
+        <div class="additionalInformationContainer">
+
+            <div class="additionalInformationTitleContainer">
+
+                <h3> Informações adicionais</h3>
+
+                <button class="hide informationContainer"> Esconder </button>
+
+                <button class="show informationContainer notDisplay"> Mostrar </button>
+
+            </div>
+
+            <div id="informationContainer">
+
+                <p> {{ recipe.information }} </p>
+
+            </div>
+
+        </div>
+
+    {% endif %}
+    
+    <script src="/recipeScripts.js"></script>
+
+{% endblock content %}

@@ -4,7 +4,7 @@ module.exports = {
     // Show home page
     home(request, response) {
         return response.render(
-            "landing",
+            "visitor/landing",
             {
                 recipes: recipesData
             }
@@ -13,7 +13,7 @@ module.exports = {
     // Show recipes
     index(request, response) {    
         return response.render(    
-            "recipes",    
+            "visitor/recipes",    
             {    
                 recipes: recipesData   
             }
@@ -21,7 +21,7 @@ module.exports = {
     },
     // Show about page
     about(request, response) {
-        return response.render("about")
+        return response.render("visitor/about")
     },
     // Show a recipe
     show(request, response) {
@@ -37,7 +37,7 @@ module.exports = {
         }
         if(indexExists) {
             return response.render(            
-                "recipe",                
+                "visitor/recipe",                
                 {
                     recipe: recipesData[recipeIndex]
                 }            
