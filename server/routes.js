@@ -2,9 +2,8 @@ const express = require("express");
 
 const routes = express.Router();
 
+// Visitor pages
 const visitorController = require("./controllers/visitor");
-
-// Routes
 // Landing page
 routes.get("/", visitorController.home);
 // Show recipes
@@ -13,5 +12,8 @@ routes.get("/recipes", visitorController.index);
 routes.get("/about", visitorController.about);
 // A specific recipe
 routes.get("/recipes/:index", visitorController.show);
+
+// Admin pages
+
 
 module.exports = routes;
