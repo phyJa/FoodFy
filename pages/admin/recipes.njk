@@ -21,7 +21,6 @@
         <h3>Receitas</h3>
 
         <div class="displayRecipes">
-            
             {% for recipe in recipes %}
 
                 <div class="recipe">
@@ -45,31 +44,6 @@
                 </div>
 
             {% endfor %}
-
-            {% for recipe in recipes %}
-
-                <div class="recipe">
-
-                    <span class="notDisplay"> {{ loop.index0 }} </span>
-
-                    <div class="imgContainer">
-
-                        <img src="{{recipe.image}}" alt="Image of {{recipe.title}}" />
-
-                    </div>
-
-                    <div class="recipeDescription">
-
-                        <h4 class="recipeTitle"> {{ recipe.title }} </h4>
-
-                        <p class="recipeOwner"> por {{ recipe.author }} </p>
-
-                    </div>
-
-                </div>
-
-            {% endfor %}
-
         </div>
         
     </section>

@@ -14,6 +14,8 @@ routes.get("/about", visitorController.about);
 routes.get("/recipes/:index", visitorController.show);
 
 // Admin pages
-
+const recipes = require("./controllers/admin");
+// List the recipes
+routes.get("/admin/recipes", recipes.index);
 
 module.exports = routes;
