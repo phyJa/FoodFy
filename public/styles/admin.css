@@ -1,0 +1,15 @@
+header {
+    background-color: black;
+    margin: 0;
+    width: 100%;
+    padding: 2.4% 16.5%;
+}
+
+section .displayRecipes {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section .displayRecipes .recipe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+} 
