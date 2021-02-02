@@ -103,7 +103,7 @@ section .displayRecipes .recipe {
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
-    transition: border 500ms;
+    transition: border 500ms, background-color 500ms;
 }
 
 section .displayRecipes .recipe:hover {
@@ -115,7 +115,8 @@ section .displayRecipes .recipe .imgContainer {
     width: 100%;
 }
 
-section .displayRecipes .recipe .imgContainer img {
+section .displayRecipes .recipe .imgContainer img,
+section .displayRecipes .adminRecipe .imgContainer img {
     width: 100%;
     border-radius: 8px;
 }

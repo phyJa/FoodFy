@@ -7,9 +7,32 @@ header {
 
 section .displayRecipes {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-section .displayRecipes .recipe {
+section .displayRecipes .adminRecipe {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-} 
+    grid-template-columns: 172px 1fr;
+    gap: 20px;
+    cursor: auto;
+    border: none;
+}
+
+section .displayRecipes .adminRecipe:hover {
+    background: none;
+    border: none;
+}
+
+section .displayRecipes .adminRecipe .imgContainer {
+    height: 80px;
+}
+
+section .displayRecipes .adminRecipe .imgContainer {
+    height: 100%;
+}
+
+section .displayRecipes .adminRecipe .recipeDescription .viewRecipe {
+    text-decoration: none;
+    color: #6558C3;
+    font-size: 14px;
+}
