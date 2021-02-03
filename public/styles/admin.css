@@ -16,6 +16,7 @@ section .displayRecipes .adminRecipe {
     gap: 20px;
     cursor: auto;
     border: none;
+    height: 110px;
 }
 
 section .displayRecipes .adminRecipe:hover {
@@ -25,14 +26,24 @@ section .displayRecipes .adminRecipe:hover {
 
 section .displayRecipes .adminRecipe .imgContainer {
     height: 80px;
+    border-radius: 8.57px;
 }
 
-section .displayRecipes .adminRecipe .imgContainer {
-    height: 100%;
+section .displayRecipes .adminRecipe .recipeDescription .recipeTitle {
+    margin-bottom: 5px;
+}
+
+section .displayRecipes .adminRecipe .recipeDescription .recipeOwner {
+    margin-bottom: 10px;
 }
 
 section .displayRecipes .adminRecipe .recipeDescription .viewRecipe {
     text-decoration: none;
     color: #6558C3;
     font-size: 14px;
+    transition: color 300ms;
+}
+
+section .displayRecipes .adminRecipe .recipeDescription .viewRecipe:hover {
+    color: rgb(255, 0, 106);
 }
