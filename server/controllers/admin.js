@@ -14,7 +14,13 @@ module.exports = {
 
     },
     show(request, response) {
-
+        const requestedRecipeIndex = Number(request.params.id);
+        return response.render(
+            "admin/recipe",
+            {
+                recipe: recipesData[requestedRecipeIndex]
+            }
+        ); 
     },
     edit(request, response) {
 

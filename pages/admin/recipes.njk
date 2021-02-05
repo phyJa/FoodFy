@@ -17,7 +17,7 @@
                     <div class="recipeDescription">
                         <h4 class="recipeTitle"> {{ recipe.title }} </h4>
                         <p class="recipeOwner"> por {{ recipe.author }} </p>
-                        <a class="viewRecipe" href="">Visualizar</a>
+                        <a class="viewRecipe" href="/admin/recipes/{{ loop.index0 }}">Visualizar</a>
                     </div>
                 </div>
             {% endfor %}
