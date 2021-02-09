@@ -8,6 +8,11 @@
 
 {% block content %}
 
+    <div class="recipeNameAndEditionContainer">
+        <h2> Receita: {{recipe.title}} </h2>
+        <a href="#"> Editar receita </a>
+    </div>
+
     <div class="recipeImageContainer">
 
         <img src="{{recipe.image}}" alt="Image of {{recipe.title}}" class="recipe" />
