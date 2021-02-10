@@ -11,6 +11,29 @@
     header {
         margin: 0;
     }
+    .recipeNameAndEditionContainer {
+        display: grid;
+        grid-template-columns: 150px;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    .recipeNameAndEditionContainer h2 {
+        font-size: 20px;
+    }
+    .recipeNameAndEditionContainer a {
+        font-size: 16px;
+        text-align: center;
+    }
+    .titleAndAuthorContainer {
+        margin-bottom: 40px;
+    }
+    .titleAndAuthorContainer h2.recipeTitle{
+        font-size: 20px;
+    }
+    .titleAndAuthorContainer h3.recipeAuthor{
+        font-size: 16px;
+    }
 }
 
 @media(max-width: 600px) {
