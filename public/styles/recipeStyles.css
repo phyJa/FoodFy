@@ -123,6 +123,11 @@ button.show:hover {
     list-style-position: inside;
 }
 
+.ingredientsContainer #ingredients.adminIngredients,
+.preparationContainer #preparation.adminPreparation {
+    list-style-type: none;
+}
+
 .ingredientsContainer #ingredients li,
 .preparationContainer #preparation li,
 .additionalInformationContainer #informationContainer p {

@@ -14,37 +14,27 @@
     </div>
 
     <div class="recipeImageContainer">
-
         <img src="{{recipe.image}}" alt="Image of {{recipe.title}}" class="recipe" />
-
     </div>
 
     <div class="titleAndAuthorContainer">
-
         <h2 class="recipeTitle"> {{ recipe.title }} </h2>
-
         <h3 class="recipeAuthor"> por {{recipe.author}} </h3>
-
     </div>
 
     <div class="ingredientsContainer">
-
-        <div class="ingredientsTitleContainer"> 
-        
+        <div class="ingredientsTitleContainer">  
             <h3> Ingredientes </h3>   
-
         </div>
-
-        <ul id="ingredients">
+        <ul id="ingredients" class="adminIngredients">
 
             {% for ingredient in recipe.ingredients %}
 
-                <li> {{ ingredient }} </li>
+                <li> - {{ ingredient }} </li>
 
             {% endfor %}
 
         </ul>
-
     </div>
 
     <div class="preparationContainer">
@@ -55,11 +45,11 @@
 
         </div>
 
-        <ul id="preparation">
+        <ul id="preparation" class="adminPreparation">
 
             {% for preparationItem in recipe.preparation %}
 
-                <li> {{ preparationItem }} </li>
+                <li> - {{ preparationItem }} </li>
 
             {% endfor %}
 
