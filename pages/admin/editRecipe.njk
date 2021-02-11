@@ -1,0 +1,36 @@
+{% extends "admin/layout.njk" %}
+
+{% block additionalStyles %}
+    <link rel="stylesheet" href="/styles/landingStyles.css" />
+    <link rel="stylesheet" href="/styles/editRecipe.css" />
+{% endblock additionalStyles %}
+
+{% block content %}
+        <div class="formHeaderAndButtons">
+            <h3> Editando receita </h3>
+            <div class="buttonsContainer">
+                <button class="delete" form="deleteRecipe" type="submit"> Deletar </button>
+                <button class="edit" form="editRecipe" type="submit"> Salvar receita </button>
+            </div>
+        </div>
+        <form method="POST" id="editRecipe">
+            <div class="recipeUrlContainer">
+                <label for="recipeImage"> Imagem da receita </label>
+                <input type="url" name="recipeImage"/>
+            </div>
+            <div class="recipeIngredientsContainer">
+                <label for="recipeIngredient"> Ingredientes </label>
+                <input type="text" name="recipeIngredient"/>
+                <button form=""> Adicionar novo ingrediente </button>
+            </div>
+            <div class="recipePreparationContainer">
+                <label for="recipePreparation"> Modo de preparo </label>
+                <input type="text" name="recipePreparation"/>
+                <button form=""> Adicionar novo passo </button>
+            </div>
+            <div class="additionalInformationContainer">
+                <label for="additionalInformation"> Informações adicionais </label>
+                <textarea type="text" name="additionalInformation"></textarea>
+            </div>
+        </form>
+{% endblock content %}

@@ -18,12 +18,13 @@ module.exports = {
         return response.render(
             "admin/recipe",
             {
-                recipe: recipesData[requestedRecipeIndex]
+                recipe: recipesData[requestedRecipeIndex],
+                id: requestedRecipeIndex
             }
         ); 
     },
     edit(request, response) {
-
+        return response.render("admin/editRecipe");
     },
     // Functions to perform actions
     post(request, response) {
