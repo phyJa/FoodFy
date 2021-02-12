@@ -25,6 +25,7 @@
     color: white;
     cursor: pointer;
     transition: background-color 300ms;
+    outline: none;
 }
 
 .formHeaderAndButtons .buttonsContainer .delete {
@@ -32,7 +33,7 @@
 }
 
 .formHeaderAndButtons .buttonsContainer .edit {
-    background-color: #6558C3;
+    background-color: var(--default-button-color);
 }
 
 .formHeaderAndButtons .buttonsContainer .delete:hover {
@@ -41,4 +42,56 @@
 
 .formHeaderAndButtons .buttonsContainer .edit:hover {
     background-color: #5024b8;
+}
+
+.formHeaderAndButtons .buttonsContainer .edit:active {
+    background-color: rgb(32, 148, 202);
+}
+
+.formHeaderAndButtons .buttonsContainer .delete:active{
+    background-color: black;
+}
+
+.recipeUrlContainer,
+.recipeIngredientsContainer,
+.recipePreparationContainer,
+.additionalInformationContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.recipeIngredientsContainer .buttonContainer button,
+.recipePreparationContainer .buttonContainer button {
+    color: var(--default-button-color);
+    cursor: pointer;
+    background: none;
+    padding: 5px;
+    font-size: 16px;
+    transition: color 300ms;
+    outline: none;
+}
+
+.recipeIngredientsContainer .buttonContainer button:hover,
+.recipePreparationContainer .buttonContainer button:hover {
+    color: #3f24b8;
+}
+
+input, textarea {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    height: 49px;
+    padding: 10px 10px;
+    outline: none;
+    transition: border 100ms;
+    font-size: 15px;
+}
+
+textarea {
+    height: 257px;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid rgb(100, 48, 48);
 }
