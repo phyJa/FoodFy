@@ -10,11 +10,8 @@
                 {% block formTitle %}
                 {% endblock formTitle %} 
             </h3>
-            <div class="buttonsContainer">
-                {% block additionalButtons %}
-                {% endblock additionalButtons %}
-                <button class="edit" form="editRecipe" type="submit"> Salvar receita </button>
-            </div>
+            {% block additionalButtonsContainer %}
+            {% endblock additionalButtonsContainer %}
         </div>
         <form method="POST" id="editRecipe">
             <div class="recipeUrlContainer">

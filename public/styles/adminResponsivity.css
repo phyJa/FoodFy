@@ -36,6 +36,23 @@
     }
 }
 
+@media(max-width: 650px) {
+
+    .formHeaderAndButtons {
+        grid-template-columns: 1fr;
+    }
+
+    .formHeaderAndButtons h3 {
+        margin-bottom: 20px;
+    }
+
+    .formHeaderAndButtons .buttonsContainer.createRecipe {
+        grid-template-columns: 100px;
+        justify-content: center;
+    }
+
+}
+
 @media(max-width: 600px) {
 
     section h3 {
