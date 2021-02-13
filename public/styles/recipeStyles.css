@@ -1,12 +1,36 @@
+.recipeNameAndEditionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .recipeImageContainer,
 .preparationContainer,
 .ingredientsContainer,
-.additionalInformationContainer {
+.additionalInformationContainer,
+.recipeNameAndEditionContainer {
 
     width: var(--defaultWidth);
     
     margin: var(--defaultMargin);
 
+}
+
+.recipeNameAndEditionContainer a {
+    text-decoration: none;
+    background-color: #6558C3;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 4px;
+    transition: background-color 300ms;
+}
+
+.recipeNameAndEditionContainer a:hover {
+    background-color: rgb(255, 0, 106);
+}
+
+.recipeNameAndEditionContainer a:active {
+    background-color: rgb(255, 0, 0);
 }
 
 .recipeImageContainer img {
@@ -54,11 +78,9 @@
 .ingredientsContainer .ingredientsTitleContainer,
 .preparationContainer .preparationTitleContainer,
 .additionalInformationContainer .additionalInformationTitleContainer {
-
     display: flex;
-
     align-items: center;
-
+    margin-bottom: 20px;
 }
 
 button {
@@ -95,22 +117,22 @@ button.show:hover {
 
 }
 
-.ingredientsContainer .ingredients,
-.preparationContainer .preparation {
-
+.ingredientsContainer #ingredients,
+.preparationContainer #preparation {
     /* To make the list markers be inside the ul element */
     list-style-position: inside;
-
 }
 
-.ingredientsContainer .ingredients li,
-.preparationContainer .preparation li,
-.additionalInformationContainer .informationContainer p {
+.ingredientsContainer #ingredients.adminIngredients,
+.preparationContainer #preparation.adminPreparation {
+    list-style-type: none;
+}
 
+.ingredientsContainer #ingredients li,
+.preparationContainer #preparation li,
+.additionalInformationContainer #informationContainer p {
     line-height: 26px;
-
     font-size: 18px;
-
-    margin-top: 1vw;
-
+    margin-top: 5px;
+    text-align: justify;
 }

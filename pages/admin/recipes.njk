@@ -1,0 +1,23 @@
+{% extends "admin/layout.njk" %}
+{% block content %}
+    <section>
+        <h3>Gerenciar receitas</h3>
+        <div class="displayRecipes">
+            {% for recipe in recipes %}
+                <div class="adminRecipe">
+                    <span class="notDisplay"> {{ loop.index0 }} </span>
+                    <div 
+                        class="imgContainer" 
+                        style="background: url({{recipe.image}}) no-repeat center center/cover"
+                    >
+                    </div>
+                    <div class="recipeDescription">
+                        <h4 class="recipeTitle"> {{ recipe.title }} </h4>
+                        <p class="recipeOwner"> por {{ recipe.author }} </p>
+                        <a class="viewRecipe" href="/admin/recipes/{{ loop.index0 }}">Visualizar</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock content %}

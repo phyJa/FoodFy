@@ -1,0 +1,90 @@
+@media(max-width: 1000px) {
+    section h3 {
+        margin-bottom: 50px;
+    }
+    section .displayRecipes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 760px) {
+    header {
+        margin: 0;
+    }
+    .recipeNameAndEditionContainer {
+        display: grid;
+        grid-template-columns: 150px;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    .recipeNameAndEditionContainer h2 {
+        font-size: 20px;
+    }
+    .recipeNameAndEditionContainer a {
+        font-size: 16px;
+        text-align: center;
+    }
+    .titleAndAuthorContainer {
+        margin-bottom: 40px;
+    }
+    .titleAndAuthorContainer h2.recipeTitle{
+        font-size: 20px;
+    }
+    .titleAndAuthorContainer h3.recipeAuthor{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 650px) {
+
+    .formHeaderAndButtons {
+        grid-template-columns: 1fr;
+    }
+
+    .formHeaderAndButtons h3 {
+        margin-bottom: 20px;
+    }
+
+    .formHeaderAndButtons .buttonsContainer.createRecipe {
+        grid-template-columns: 100px;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    section h3 {
+        font-size: 4.5vw;
+    }
+
+    section .displayRecipes .adminRecipe {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 100px;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    section .displayRecipes .adminRecipe .imgContainer{
+        height: 50px;
+        width: 50%;
+        margin: auto;
+    }
+
+    section .displayRecipes .adminRecipe .recipeDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .displayRecipes .adminRecipe .recipeDescription a.viewRecipe {
+        font-size: 3.2vw;
+    }
+}
+
+@media(max-width: 420px) {
+    section .displayRecipes .adminRecipe {
+        margin-bottom: 10px;
+    }
+}

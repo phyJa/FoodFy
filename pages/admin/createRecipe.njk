@@ -1,0 +1,11 @@
+{% extends "admin/form.njk" %}
+
+{% block formTitle %}
+    Criando receita
+{% endblock formTitle %}
+
+{% block additionalButtonsContainer %}
+    <div class="buttonsContainer createRecipe">
+        <button class="edit" form="editRecipe" type="submit"> Salvar receita </button>
+    </div>
+{% endblock additionalButtonsContainer %}
