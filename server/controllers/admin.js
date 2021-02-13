@@ -11,7 +11,9 @@ module.exports = {
         );
     },
     create(request, response) {
-
+        return response.render(
+            "admin/createRecipe"
+        );
     },
     show(request, response) {
         const requestedRecipeIndex = Number(request.params.id);
