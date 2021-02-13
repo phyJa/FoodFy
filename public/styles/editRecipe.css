@@ -18,6 +18,12 @@
     align-items: center;
 }
 
+.formHeaderAndButtons .buttonsContainer.createRecipe {
+    grid-template-columns: 120px;
+    justify-content: right;
+}
+
+
 .formHeaderAndButtons .buttonsContainer .delete,
 .formHeaderAndButtons .buttonsContainer .edit {
     padding: 8px 16px;
