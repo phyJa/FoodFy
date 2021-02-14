@@ -20,9 +20,9 @@
             </div>
             <div class="recipeIngredientsContainer">
                 <label for="recipeIngredient"> Ingredientes </label>
-                <input type="text" name="recipeIngredient"/>
+                <input class="ingredient" type="text" name="recipeIngredient[]" placeholder="Digite o ingrediente aqui"/>
                 <div class="buttonContainer">
-                    <button form=""> Adicionar novo ingrediente </button>
+                    <button form="" onclick="addIngredient()"> Adicionar novo ingrediente </button>
                 </div>
             </div>
             <div class="recipePreparationContainer">
@@ -37,4 +37,5 @@
                 <textarea type="text" name="additionalInformation"></textarea>
             </div>
         </form>
+        <script src="/scripts/dynamicRecipe.js"></script>
 {% endblock content %}
