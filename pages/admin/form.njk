@@ -20,16 +20,26 @@
             </div>
             <div class="recipeIngredientsContainer">
                 <label for="recipeIngredient"> Ingredientes </label>
-                <input class="ingredient" type="text" name="recipeIngredient[]" placeholder="Digite o ingrediente aqui"/>
+                <input 
+                    class="ingredient" 
+                    type="text" 
+                    name="recipeIngredient[]" 
+                    placeholder="Digite o ingrediente aqui"
+                />
                 <div class="buttonContainer">
                     <button form="" onclick="addIngredient()"> Adicionar novo ingrediente </button>
                 </div>
             </div>
             <div class="recipePreparationContainer">
                 <label for="recipePreparation"> Modo de preparo </label>
-                <input type="text" name="recipePreparation"/>
+                <input
+                    class="preparation" 
+                    type="text" 
+                    name="recipePreparation[]"
+                    placeholder="Digite o passo do modo de preparo..."
+                />
                 <div class="buttonContainer">
-                    <button form=""> Adicionar novo passo </button>
+                    <button form="" onclick="addStep()"> Adicionar novo passo </button>
                 </div>
             </div>
             <div class="additionalInformationContainer">
