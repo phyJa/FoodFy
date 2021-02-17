@@ -2,6 +2,10 @@
 
 {% block additionalStyles %}
     <link rel="stylesheet" href="/styles/editRecipe.css" />
+    <link 
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet" 
+    />
 {% endblock additionalStyles %}
 
 {% block content %}
@@ -38,6 +42,7 @@
                     name="recipePreparation[]"
                     placeholder="Digite o passo do modo de preparo..."
                 />
+                <span class="material-icons">highlight_off</span>
                 <div class="buttonContainer">
                     <button form="" onclick="addItem('recipePreparationContainer')"> Adicionar novo passo </button>
                 </div>
