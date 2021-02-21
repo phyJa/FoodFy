@@ -84,6 +84,23 @@
     color: #3f24b8;
 }
 
+.inputAndCloseButtonContainer {  
+    display: grid;
+    grid-template-columns: 95% 5%;
+    align-items: center;
+    text-align: center;
+}
+
+.material-icons.md-30 { 
+    font-size: 30px;
+    transition: color 300ms;  
+}
+
+.inputAndCloseButtonContainer span:hover {
+    cursor: pointer;
+    color: red;
+}
+
 input, textarea {
     border: 1px solid #DDDDDD;
     border-radius: 4px;
