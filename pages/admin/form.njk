@@ -24,25 +24,31 @@
             </div>
             <div class="recipeIngredientsContainer">
                 <label for="recipeIngredient"> Ingredientes </label>
-                <input 
-                    class="ingredient" 
-                    type="text" 
-                    name="recipeIngredient[]" 
-                    placeholder="Digite o ingrediente aqui"
-                />
+                <div class="inputAndCloseButtonContainer">
+                    <input 
+                        class="ingredient" 
+                        type="text" 
+                        name="recipeIngredient[]" 
+                        placeholder="Digite o ingrediente aqui"
+                    />
+                    <span class="material-icons">highlight_off</span>
+                </div>
+                
                 <div class="buttonContainer">
                     <button form="" onclick="addItem('recipeIngredientsContainer')"> Adicionar novo ingrediente </button>
                 </div>
             </div>
             <div class="recipePreparationContainer">
                 <label for="recipePreparation"> Modo de preparo </label>
-                <input
-                    class="preparation" 
-                    type="text" 
-                    name="recipePreparation[]"
-                    placeholder="Digite o passo do modo de preparo..."
-                />
-                <span class="material-icons">highlight_off</span>
+                <div class="inputAndCloseButtonContainer">
+                    <input
+                        class="preparation" 
+                        type="text" 
+                        name="recipePreparation[]"
+                        placeholder="Digite o passo do modo de preparo..."
+                    />
+                    <span class="material-icons">highlight_off</span>
+                </div>
                 <div class="buttonContainer">
                     <button form="" onclick="addItem('recipePreparationContainer')"> Adicionar novo passo </button>
                 </div>
